@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'lib-header',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
+  styleUrls: ['./header.component.css'],
+  
 })
 export class HeaderComponent {}

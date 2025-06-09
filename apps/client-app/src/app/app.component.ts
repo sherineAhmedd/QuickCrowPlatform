@@ -1,12 +1,14 @@
+import { HeaderComponent } from './../../../../shared/src/lib/layout/header.component';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+
 
 @Component({
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [HeaderComponent, RouterModule],
   selector: 'app-root',
+  standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'client-app';
